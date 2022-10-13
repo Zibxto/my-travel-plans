@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Assignment</title>
+	<title>My First Web Page</title>
+	<style>
+		.rel {
+			position: relative;
+		}
+		.abs {
+			position: absolute;
+			width: 20%;
+			top: 25%;
+			padding: 10px;
+			display: none;
+		}
+
+		.rel:hover .abs {
+			display: block;
+		}
+	</style>
 </head>
 <body>
-	<h1>WELCOME TO MY ASSIGNMENT PAGE</h1>
+	<div class="rel">
+		<img src="img.jpg" width="20%" height="180px">
+		<p class="abs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </p>
+	</div>
+	
 </body>
 </html>
